@@ -1,0 +1,662 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A62883C71D0012CC0049B5DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A62883C61D0012CC0049B5DD /* main.m */; };
+		A62883CA1D0012CC0049B5DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A62883C91D0012CC0049B5DD /* AppDelegate.m */; };
+		A62883CD1D0012CC0049B5DD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62883CC1D0012CC0049B5DD /* ViewController.m */; };
+		A62883D01D0012CC0049B5DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62883CE1D0012CC0049B5DD /* Main.storyboard */; };
+		A62883D21D0012CC0049B5DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A62883D11D0012CC0049B5DD /* Assets.xcassets */; };
+		A62883D51D0012CC0049B5DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A62883D31D0012CC0049B5DD /* LaunchScreen.storyboard */; };
+		A62883E01D0012CC0049B5DD /* FJ_VoiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A62883DF1D0012CC0049B5DD /* FJ_VoiceTests.m */; };
+		A62883EB1D0012CC0049B5DD /* FJ_VoiceUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A62883EA1D0012CC0049B5DD /* FJ_VoiceUITests.m */; };
+		A62883FD1D0013F80049B5DD /* FJRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62883FC1D0013F80049B5DD /* FJRecordViewController.m */; };
+		A62884001D0014150049B5DD /* FJPlayAudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62883FF1D0014150049B5DD /* FJPlayAudioViewController.m */; };
+		A62884031D0014270049B5DD /* FJPlayMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A62884021D0014270049B5DD /* FJPlayMusicViewController.m */; };
+		A62884191D0018910049B5DD /* buyao.wav in Resources */ = {isa = PBXBuildFile; fileRef = A62884051D0018910049B5DD /* buyao.wav */; };
+		A628841A1D0018910049B5DD /* lose.aac in Resources */ = {isa = PBXBuildFile; fileRef = A62884061D0018910049B5DD /* lose.aac */; };
+		A628841B1D0018910049B5DD /* m_03.wav in Resources */ = {isa = PBXBuildFile; fileRef = A62884071D0018910049B5DD /* m_03.wav */; };
+		A628841C1D0018910049B5DD /* m_04.wav in Resources */ = {isa = PBXBuildFile; fileRef = A62884081D0018910049B5DD /* m_04.wav */; };
+		A628841D1D0018910049B5DD /* m_05.wav in Resources */ = {isa = PBXBuildFile; fileRef = A62884091D0018910049B5DD /* m_05.wav */; };
+		A628841E1D0018910049B5DD /* m_06.wav in Resources */ = {isa = PBXBuildFile; fileRef = A628840A1D0018910049B5DD /* m_06.wav */; };
+		A628841F1D0018910049B5DD /* m_07.wav in Resources */ = {isa = PBXBuildFile; fileRef = A628840B1D0018910049B5DD /* m_07.wav */; };
+		A62884201D0018910049B5DD /* m_08.wav in Resources */ = {isa = PBXBuildFile; fileRef = A628840C1D0018910049B5DD /* m_08.wav */; };
+		A62884211D0018910049B5DD /* m_09.wav in Resources */ = {isa = PBXBuildFile; fileRef = A628840D1D0018910049B5DD /* m_09.wav */; };
+		A62884221D0018910049B5DD /* m_10.wav in Resources */ = {isa = PBXBuildFile; fileRef = A628840E1D0018910049B5DD /* m_10.wav */; };
+		A62884231D0018910049B5DD /* m_11.wav in Resources */ = {isa = PBXBuildFile; fileRef = A628840F1D0018910049B5DD /* m_11.wav */; };
+		A62884241D0018910049B5DD /* m_12.wav in Resources */ = {isa = PBXBuildFile; fileRef = A62884101D0018910049B5DD /* m_12.wav */; };
+		A62884251D0018910049B5DD /* m_13.wav in Resources */ = {isa = PBXBuildFile; fileRef = A62884111D0018910049B5DD /* m_13.wav */; };
+		A62884261D0018910049B5DD /* m_14.wav in Resources */ = {isa = PBXBuildFile; fileRef = A62884121D0018910049B5DD /* m_14.wav */; };
+		A62884271D0018910049B5DD /* m_15.wav in Resources */ = {isa = PBXBuildFile; fileRef = A62884131D0018910049B5DD /* m_15.wav */; };
+		A62884281D0018910049B5DD /* m_16.wav in Resources */ = {isa = PBXBuildFile; fileRef = A62884141D0018910049B5DD /* m_16.wav */; };
+		A62884291D0018910049B5DD /* m_17.wav in Resources */ = {isa = PBXBuildFile; fileRef = A62884151D0018910049B5DD /* m_17.wav */; };
+		A628842A1D0018910049B5DD /* normal.aac in Resources */ = {isa = PBXBuildFile; fileRef = A62884161D0018910049B5DD /* normal.aac */; };
+		A628842B1D0018910049B5DD /* sendcard.aac in Resources */ = {isa = PBXBuildFile; fileRef = A62884171D0018910049B5DD /* sendcard.aac */; };
+		A628842C1D0018910049B5DD /* win.aac in Resources */ = {isa = PBXBuildFile; fileRef = A62884181D0018910049B5DD /* win.aac */; };
+		A628842F1D0019400049B5DD /* FJAudioTool.m in Sources */ = {isa = PBXBuildFile; fileRef = A628842E1D0019400049B5DD /* FJAudioTool.m */; };
+		A62884311D001B5F0049B5DD /* 14945107.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A62884301D001B5F0049B5DD /* 14945107.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A62883DC1D0012CC0049B5DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A62883BA1D0012CC0049B5DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A62883C11D0012CC0049B5DD;
+			remoteInfo = "FJ-Voice";
+		};
+		A62883E71D0012CC0049B5DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A62883BA1D0012CC0049B5DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A62883C11D0012CC0049B5DD;
+			remoteInfo = "FJ-Voice";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A62883C21D0012CC0049B5DD /* FJ-Voice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FJ-Voice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62883C61D0012CC0049B5DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A62883C81D0012CC0049B5DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A62883C91D0012CC0049B5DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A62883CB1D0012CC0049B5DD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A62883CC1D0012CC0049B5DD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A62883CF1D0012CC0049B5DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A62883D11D0012CC0049B5DD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A62883D41D0012CC0049B5DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A62883D61D0012CC0049B5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A62883DB1D0012CC0049B5DD /* FJ-VoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FJ-VoiceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62883DF1D0012CC0049B5DD /* FJ_VoiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJ_VoiceTests.m; sourceTree = "<group>"; };
+		A62883E11D0012CC0049B5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A62883E61D0012CC0049B5DD /* FJ-VoiceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "FJ-VoiceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A62883EA1D0012CC0049B5DD /* FJ_VoiceUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FJ_VoiceUITests.m; sourceTree = "<group>"; };
+		A62883EC1D0012CC0049B5DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A62883FB1D0013F80049B5DD /* FJRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJRecordViewController.h; sourceTree = "<group>"; };
+		A62883FC1D0013F80049B5DD /* FJRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJRecordViewController.m; sourceTree = "<group>"; };
+		A62883FE1D0014150049B5DD /* FJPlayAudioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJPlayAudioViewController.h; sourceTree = "<group>"; };
+		A62883FF1D0014150049B5DD /* FJPlayAudioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJPlayAudioViewController.m; sourceTree = "<group>"; };
+		A62884011D0014270049B5DD /* FJPlayMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJPlayMusicViewController.h; sourceTree = "<group>"; };
+		A62884021D0014270049B5DD /* FJPlayMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJPlayMusicViewController.m; sourceTree = "<group>"; };
+		A62884051D0018910049B5DD /* buyao.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = buyao.wav; sourceTree = "<group>"; };
+		A62884061D0018910049B5DD /* lose.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = lose.aac; sourceTree = "<group>"; };
+		A62884071D0018910049B5DD /* m_03.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_03.wav; sourceTree = "<group>"; };
+		A62884081D0018910049B5DD /* m_04.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_04.wav; sourceTree = "<group>"; };
+		A62884091D0018910049B5DD /* m_05.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_05.wav; sourceTree = "<group>"; };
+		A628840A1D0018910049B5DD /* m_06.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_06.wav; sourceTree = "<group>"; };
+		A628840B1D0018910049B5DD /* m_07.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_07.wav; sourceTree = "<group>"; };
+		A628840C1D0018910049B5DD /* m_08.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_08.wav; sourceTree = "<group>"; };
+		A628840D1D0018910049B5DD /* m_09.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_09.wav; sourceTree = "<group>"; };
+		A628840E1D0018910049B5DD /* m_10.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_10.wav; sourceTree = "<group>"; };
+		A628840F1D0018910049B5DD /* m_11.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_11.wav; sourceTree = "<group>"; };
+		A62884101D0018910049B5DD /* m_12.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_12.wav; sourceTree = "<group>"; };
+		A62884111D0018910049B5DD /* m_13.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_13.wav; sourceTree = "<group>"; };
+		A62884121D0018910049B5DD /* m_14.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_14.wav; sourceTree = "<group>"; };
+		A62884131D0018910049B5DD /* m_15.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_15.wav; sourceTree = "<group>"; };
+		A62884141D0018910049B5DD /* m_16.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_16.wav; sourceTree = "<group>"; };
+		A62884151D0018910049B5DD /* m_17.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = m_17.wav; sourceTree = "<group>"; };
+		A62884161D0018910049B5DD /* normal.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = normal.aac; sourceTree = "<group>"; };
+		A62884171D0018910049B5DD /* sendcard.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = sendcard.aac; sourceTree = "<group>"; };
+		A62884181D0018910049B5DD /* win.aac */ = {isa = PBXFileReference; lastKnownFileType = file; path = win.aac; sourceTree = "<group>"; };
+		A628842D1D0019400049B5DD /* FJAudioTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FJAudioTool.h; sourceTree = "<group>"; };
+		A628842E1D0019400049B5DD /* FJAudioTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJAudioTool.m; sourceTree = "<group>"; };
+		A62884301D001B5F0049B5DD /* 14945107.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 14945107.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A62883BF1D0012CC0049B5DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62883D81D0012CC0049B5DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62883E31D0012CC0049B5DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A62883B91D0012CC0049B5DD = {
+			isa = PBXGroup;
+			children = (
+				A62883C41D0012CC0049B5DD /* FJ-Voice */,
+				A62883DE1D0012CC0049B5DD /* FJ-VoiceTests */,
+				A62883E91D0012CC0049B5DD /* FJ-VoiceUITests */,
+				A62883C31D0012CC0049B5DD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A62883C31D0012CC0049B5DD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A62883C21D0012CC0049B5DD /* FJ-Voice.app */,
+				A62883DB1D0012CC0049B5DD /* FJ-VoiceTests.xctest */,
+				A62883E61D0012CC0049B5DD /* FJ-VoiceUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A62883C41D0012CC0049B5DD /* FJ-Voice */ = {
+			isa = PBXGroup;
+			children = (
+				A62883FA1D0013CF0049B5DD /* 录音 */,
+				A62883F91D0013C80049B5DD /* 播放音频 */,
+				A62883F81D0013BA0049B5DD /* 播放音乐 */,
+				A62883C81D0012CC0049B5DD /* AppDelegate.h */,
+				A62883C91D0012CC0049B5DD /* AppDelegate.m */,
+				A628842D1D0019400049B5DD /* FJAudioTool.h */,
+				A628842E1D0019400049B5DD /* FJAudioTool.m */,
+				A62883CB1D0012CC0049B5DD /* ViewController.h */,
+				A62883CC1D0012CC0049B5DD /* ViewController.m */,
+				A62883CE1D0012CC0049B5DD /* Main.storyboard */,
+				A62883D11D0012CC0049B5DD /* Assets.xcassets */,
+				A62883D31D0012CC0049B5DD /* LaunchScreen.storyboard */,
+				A62883D61D0012CC0049B5DD /* Info.plist */,
+				A62883C51D0012CC0049B5DD /* Supporting Files */,
+			);
+			path = "FJ-Voice";
+			sourceTree = "<group>";
+		};
+		A62883C51D0012CC0049B5DD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A62883C61D0012CC0049B5DD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A62883DE1D0012CC0049B5DD /* FJ-VoiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				A62883DF1D0012CC0049B5DD /* FJ_VoiceTests.m */,
+				A62883E11D0012CC0049B5DD /* Info.plist */,
+			);
+			path = "FJ-VoiceTests";
+			sourceTree = "<group>";
+		};
+		A62883E91D0012CC0049B5DD /* FJ-VoiceUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A62883EA1D0012CC0049B5DD /* FJ_VoiceUITests.m */,
+				A62883EC1D0012CC0049B5DD /* Info.plist */,
+			);
+			path = "FJ-VoiceUITests";
+			sourceTree = "<group>";
+		};
+		A62883F81D0013BA0049B5DD /* 播放音乐 */ = {
+			isa = PBXGroup;
+			children = (
+				A62884301D001B5F0049B5DD /* 14945107.mp3 */,
+				A62884011D0014270049B5DD /* FJPlayMusicViewController.h */,
+				A62884021D0014270049B5DD /* FJPlayMusicViewController.m */,
+			);
+			name = "播放音乐";
+			sourceTree = "<group>";
+		};
+		A62883F91D0013C80049B5DD /* 播放音频 */ = {
+			isa = PBXGroup;
+			children = (
+				A62884041D0018910049B5DD /* 斗地主音频 */,
+				A62883FE1D0014150049B5DD /* FJPlayAudioViewController.h */,
+				A62883FF1D0014150049B5DD /* FJPlayAudioViewController.m */,
+			);
+			name = "播放音频";
+			sourceTree = "<group>";
+		};
+		A62883FA1D0013CF0049B5DD /* 录音 */ = {
+			isa = PBXGroup;
+			children = (
+				A62883FB1D0013F80049B5DD /* FJRecordViewController.h */,
+				A62883FC1D0013F80049B5DD /* FJRecordViewController.m */,
+			);
+			name = "录音";
+			sourceTree = "<group>";
+		};
+		A62884041D0018910049B5DD /* 斗地主音频 */ = {
+			isa = PBXGroup;
+			children = (
+				A62884051D0018910049B5DD /* buyao.wav */,
+				A62884061D0018910049B5DD /* lose.aac */,
+				A62884071D0018910049B5DD /* m_03.wav */,
+				A62884081D0018910049B5DD /* m_04.wav */,
+				A62884091D0018910049B5DD /* m_05.wav */,
+				A628840A1D0018910049B5DD /* m_06.wav */,
+				A628840B1D0018910049B5DD /* m_07.wav */,
+				A628840C1D0018910049B5DD /* m_08.wav */,
+				A628840D1D0018910049B5DD /* m_09.wav */,
+				A628840E1D0018910049B5DD /* m_10.wav */,
+				A628840F1D0018910049B5DD /* m_11.wav */,
+				A62884101D0018910049B5DD /* m_12.wav */,
+				A62884111D0018910049B5DD /* m_13.wav */,
+				A62884121D0018910049B5DD /* m_14.wav */,
+				A62884131D0018910049B5DD /* m_15.wav */,
+				A62884141D0018910049B5DD /* m_16.wav */,
+				A62884151D0018910049B5DD /* m_17.wav */,
+				A62884161D0018910049B5DD /* normal.aac */,
+				A62884171D0018910049B5DD /* sendcard.aac */,
+				A62884181D0018910049B5DD /* win.aac */,
+			);
+			path = "斗地主音频";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A62883C11D0012CC0049B5DD /* FJ-Voice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62883EF1D0012CC0049B5DD /* Build configuration list for PBXNativeTarget "FJ-Voice" */;
+			buildPhases = (
+				A62883BE1D0012CC0049B5DD /* Sources */,
+				A62883BF1D0012CC0049B5DD /* Frameworks */,
+				A62883C01D0012CC0049B5DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FJ-Voice";
+			productName = "FJ-Voice";
+			productReference = A62883C21D0012CC0049B5DD /* FJ-Voice.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A62883DA1D0012CC0049B5DD /* FJ-VoiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62883F21D0012CC0049B5DD /* Build configuration list for PBXNativeTarget "FJ-VoiceTests" */;
+			buildPhases = (
+				A62883D71D0012CC0049B5DD /* Sources */,
+				A62883D81D0012CC0049B5DD /* Frameworks */,
+				A62883D91D0012CC0049B5DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A62883DD1D0012CC0049B5DD /* PBXTargetDependency */,
+			);
+			name = "FJ-VoiceTests";
+			productName = "FJ-VoiceTests";
+			productReference = A62883DB1D0012CC0049B5DD /* FJ-VoiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A62883E51D0012CC0049B5DD /* FJ-VoiceUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A62883F51D0012CC0049B5DD /* Build configuration list for PBXNativeTarget "FJ-VoiceUITests" */;
+			buildPhases = (
+				A62883E21D0012CC0049B5DD /* Sources */,
+				A62883E31D0012CC0049B5DD /* Frameworks */,
+				A62883E41D0012CC0049B5DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A62883E81D0012CC0049B5DD /* PBXTargetDependency */,
+			);
+			name = "FJ-VoiceUITests";
+			productName = "FJ-VoiceUITests";
+			productReference = A62883E61D0012CC0049B5DD /* FJ-VoiceUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A62883BA1D0012CC0049B5DD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FJ;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = GF;
+				TargetAttributes = {
+					A62883C11D0012CC0049B5DD = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					A62883DA1D0012CC0049B5DD = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A62883C11D0012CC0049B5DD;
+					};
+					A62883E51D0012CC0049B5DD = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = A62883C11D0012CC0049B5DD;
+					};
+				};
+			};
+			buildConfigurationList = A62883BD1D0012CC0049B5DD /* Build configuration list for PBXProject "FJ-Voice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A62883B91D0012CC0049B5DD;
+			productRefGroup = A62883C31D0012CC0049B5DD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A62883C11D0012CC0049B5DD /* FJ-Voice */,
+				A62883DA1D0012CC0049B5DD /* FJ-VoiceTests */,
+				A62883E51D0012CC0049B5DD /* FJ-VoiceUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A62883C01D0012CC0049B5DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62884291D0018910049B5DD /* m_17.wav in Resources */,
+				A62884241D0018910049B5DD /* m_12.wav in Resources */,
+				A62884231D0018910049B5DD /* m_11.wav in Resources */,
+				A62883D51D0012CC0049B5DD /* LaunchScreen.storyboard in Resources */,
+				A628841A1D0018910049B5DD /* lose.aac in Resources */,
+				A62884251D0018910049B5DD /* m_13.wav in Resources */,
+				A62884191D0018910049B5DD /* buyao.wav in Resources */,
+				A62884271D0018910049B5DD /* m_15.wav in Resources */,
+				A62884201D0018910049B5DD /* m_08.wav in Resources */,
+				A62884221D0018910049B5DD /* m_10.wav in Resources */,
+				A628841B1D0018910049B5DD /* m_03.wav in Resources */,
+				A62884281D0018910049B5DD /* m_16.wav in Resources */,
+				A628842A1D0018910049B5DD /* normal.aac in Resources */,
+				A628842C1D0018910049B5DD /* win.aac in Resources */,
+				A62883D21D0012CC0049B5DD /* Assets.xcassets in Resources */,
+				A628841F1D0018910049B5DD /* m_07.wav in Resources */,
+				A628841D1D0018910049B5DD /* m_05.wav in Resources */,
+				A62884311D001B5F0049B5DD /* 14945107.mp3 in Resources */,
+				A628841E1D0018910049B5DD /* m_06.wav in Resources */,
+				A62884261D0018910049B5DD /* m_14.wav in Resources */,
+				A62884211D0018910049B5DD /* m_09.wav in Resources */,
+				A628842B1D0018910049B5DD /* sendcard.aac in Resources */,
+				A62883D01D0012CC0049B5DD /* Main.storyboard in Resources */,
+				A628841C1D0018910049B5DD /* m_04.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62883D91D0012CC0049B5DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62883E41D0012CC0049B5DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A62883BE1D0012CC0049B5DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62883CD1D0012CC0049B5DD /* ViewController.m in Sources */,
+				A62884001D0014150049B5DD /* FJPlayAudioViewController.m in Sources */,
+				A62883FD1D0013F80049B5DD /* FJRecordViewController.m in Sources */,
+				A62883CA1D0012CC0049B5DD /* AppDelegate.m in Sources */,
+				A628842F1D0019400049B5DD /* FJAudioTool.m in Sources */,
+				A62884031D0014270049B5DD /* FJPlayMusicViewController.m in Sources */,
+				A62883C71D0012CC0049B5DD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62883D71D0012CC0049B5DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62883E01D0012CC0049B5DD /* FJ_VoiceTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A62883E21D0012CC0049B5DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62883EB1D0012CC0049B5DD /* FJ_VoiceUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A62883DD1D0012CC0049B5DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A62883C11D0012CC0049B5DD /* FJ-Voice */;
+			targetProxy = A62883DC1D0012CC0049B5DD /* PBXContainerItemProxy */;
+		};
+		A62883E81D0012CC0049B5DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A62883C11D0012CC0049B5DD /* FJ-Voice */;
+			targetProxy = A62883E71D0012CC0049B5DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A62883CE1D0012CC0049B5DD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A62883CF1D0012CC0049B5DD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A62883D31D0012CC0049B5DD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A62883D41D0012CC0049B5DD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A62883ED1D0012CC0049B5DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A62883EE1D0012CC0049B5DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A62883F01D0012CC0049B5DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "FJ-Voice/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goodfamily.FJ-Voice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A62883F11D0012CC0049B5DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "FJ-Voice/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goodfamily.FJ-Voice";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		A62883F31D0012CC0049B5DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "FJ-VoiceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goodfamily.FJ-VoiceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FJ-Voice.app/FJ-Voice";
+			};
+			name = Debug;
+		};
+		A62883F41D0012CC0049B5DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "FJ-VoiceTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goodfamily.FJ-VoiceTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FJ-Voice.app/FJ-Voice";
+			};
+			name = Release;
+		};
+		A62883F61D0012CC0049B5DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "FJ-VoiceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goodfamily.FJ-VoiceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "FJ-Voice";
+			};
+			name = Debug;
+		};
+		A62883F71D0012CC0049B5DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "FJ-VoiceUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.goodfamily.FJ-VoiceUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "FJ-Voice";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A62883BD1D0012CC0049B5DD /* Build configuration list for PBXProject "FJ-Voice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62883ED1D0012CC0049B5DD /* Debug */,
+				A62883EE1D0012CC0049B5DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A62883EF1D0012CC0049B5DD /* Build configuration list for PBXNativeTarget "FJ-Voice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62883F01D0012CC0049B5DD /* Debug */,
+				A62883F11D0012CC0049B5DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A62883F21D0012CC0049B5DD /* Build configuration list for PBXNativeTarget "FJ-VoiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62883F31D0012CC0049B5DD /* Debug */,
+				A62883F41D0012CC0049B5DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A62883F51D0012CC0049B5DD /* Build configuration list for PBXNativeTarget "FJ-VoiceUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A62883F61D0012CC0049B5DD /* Debug */,
+				A62883F71D0012CC0049B5DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A62883BA1D0012CC0049B5DD /* Project object */;
+}
