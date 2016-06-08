@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -69,39 +70,57 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGx-cs-Xj2">
-                                <rect key="frame" x="192" y="353" width="30" height="30"/>
-                                <state key="normal" title="停止"/>
+                                <rect key="frame" x="177" y="610" width="60" height="30"/>
+                                <state key="normal" title="暂停录制"/>
                                 <connections>
-                                    <action selector="stop" destination="un1-Nd-D3i" eventType="touchUpInside" id="GZM-ch-UlS"/>
+                                    <action selector="pauseClick" destination="un1-Nd-D3i" eventType="touchUpInside" id="Xuk-4V-Skp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gQg-tp-hF8">
-                                <rect key="frame" x="192" y="471" width="30" height="30"/>
-                                <state key="normal" title="播放"/>
+                                <rect key="frame" x="177" y="648" width="60" height="30"/>
+                                <state key="normal" title="恢复录音"/>
                                 <connections>
-                                    <action selector="play" destination="un1-Nd-D3i" eventType="touchUpInside" id="4WG-Bh-1mX"/>
+                                    <action selector="resumeClick:" destination="un1-Nd-D3i" eventType="touchUpInside" id="l1v-9h-8qM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gx5-0O-3D9">
-                                <rect key="frame" x="192" y="235" width="30" height="30"/>
-                                <state key="normal" title="开始"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afv-Eq-ONT">
+                                <rect key="frame" x="177" y="686" width="60" height="30"/>
+                                <state key="normal" title="停止录音"/>
                                 <connections>
-                                    <action selector="star" destination="un1-Nd-D3i" eventType="touchUpInside" id="6eS-G2-qWT"/>
+                                    <action selector="stopClick" destination="un1-Nd-D3i" eventType="touchUpInside" id="SrP-ny-3kD"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="jBu-M3-jQe">
+                                <rect key="frame" x="41.5" y="367" width="331" height="2"/>
+                            </progressView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gx5-0O-3D9">
+                                <rect key="frame" x="177" y="572" width="60" height="30"/>
+                                <state key="normal" title="开始录制"/>
+                                <connections>
+                                    <action selector="recordClick:" destination="un1-Nd-D3i" eventType="touchUpInside" id="4Vn-yT-oMF"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="gQg-tp-hF8" firstAttribute="top" secondItem="dGx-cs-Xj2" secondAttribute="bottom" constant="88" id="6zk-Ss-J75"/>
-                            <constraint firstItem="dGx-cs-Xj2" firstAttribute="centerX" secondItem="kK4-ws-hBI" secondAttribute="centerX" id="9p0-aK-tur"/>
-                            <constraint firstItem="dGx-cs-Xj2" firstAttribute="top" secondItem="gx5-0O-3D9" secondAttribute="bottom" constant="88" id="BSV-kX-eQe"/>
-                            <constraint firstItem="gQg-tp-hF8" firstAttribute="centerX" secondItem="kK4-ws-hBI" secondAttribute="centerX" id="WKl-LQ-BE1"/>
-                            <constraint firstItem="dGx-cs-Xj2" firstAttribute="centerY" secondItem="kK4-ws-hBI" secondAttribute="centerY" id="ZKx-Mb-ZjC"/>
-                            <constraint firstItem="gx5-0O-3D9" firstAttribute="centerX" secondItem="kK4-ws-hBI" secondAttribute="centerX" id="crN-GJ-clQ"/>
+                            <constraint firstItem="jBu-M3-jQe" firstAttribute="centerX" secondItem="kK4-ws-hBI" secondAttribute="centerX" id="4OT-qa-qbh"/>
+                            <constraint firstItem="rxU-80-Wwz" firstAttribute="top" secondItem="afv-Eq-ONT" secondAttribute="bottom" constant="20" id="7SQ-Yb-SNh"/>
+                            <constraint firstItem="gQg-tp-hF8" firstAttribute="centerX" secondItem="kK4-ws-hBI" secondAttribute="centerX" id="Ahy-ke-r4K"/>
+                            <constraint firstItem="gx5-0O-3D9" firstAttribute="centerX" secondItem="kK4-ws-hBI" secondAttribute="centerX" id="BQ1-JZ-XyZ"/>
+                            <constraint firstItem="dGx-cs-Xj2" firstAttribute="centerX" secondItem="kK4-ws-hBI" secondAttribute="centerX" id="GiB-zf-saX"/>
+                            <constraint firstItem="gQg-tp-hF8" firstAttribute="top" secondItem="dGx-cs-Xj2" secondAttribute="bottom" constant="8" id="Otl-y5-tAU"/>
+                            <constraint firstItem="afv-Eq-ONT" firstAttribute="centerX" secondItem="kK4-ws-hBI" secondAttribute="centerX" id="PJR-n8-wLE"/>
+                            <constraint firstItem="dGx-cs-Xj2" firstAttribute="top" secondItem="gx5-0O-3D9" secondAttribute="bottom" constant="8" id="dZD-ID-mlj"/>
+                            <constraint firstItem="afv-Eq-ONT" firstAttribute="top" secondItem="gQg-tp-hF8" secondAttribute="bottom" constant="8" id="l6a-aU-lVW"/>
+                            <constraint firstItem="jBu-M3-jQe" firstAttribute="centerY" secondItem="kK4-ws-hBI" secondAttribute="centerY" id="qdW-NG-O6J"/>
+                            <constraint firstItem="jBu-M3-jQe" firstAttribute="width" secondItem="kK4-ws-hBI" secondAttribute="width" multiplier="0.8" id="uTk-on-O64"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="录音" id="9Pq-Zf-l0f"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="audioPower" destination="jBu-M3-jQe" id="cCZ-bG-8pd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dfw-Yi-GTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
